@@ -1,5 +1,19 @@
 {
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "dev": "nodemon src/index.js",
+    "final": "nodemon final/index.js",
+    "seed": "node final/util/seed/index.js",
+    "lint": "eslint \"src/**/*.js\""
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "**.test.js"
+    ]
+  },
+  
   "dependencies": {
-    "express": "^4.18.1"
-  }
+    "express": "^4.18.1",
+    "nodemon": "1.18.7"
+  } 
 }
